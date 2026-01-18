@@ -1,0 +1,45 @@
+spring:
+  main:
+    banner-mode: off
+  data:
+    rest:
+      base-path: /api
+      detection-strategy: ANNOTATED
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: ecommerceapp
+    url: jdbc:mysql://localhost:3306/full-stack-ecommerce?useSSL=false&useUnicode=yes&characterEncoding=UTF-8&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: ecommerceapp
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+logging:
+  level:
+    root: warn
+
+
+allowed:
+  origins: https://localhost:4200,http://localhost:4200
+
+okta:
+  oauth2:
+    client-id: <YOUR_OKTA_APP_CLIENT_ID>
+    issuer: <YOUR_ISSUER_FROM_OKTA_APP>
+
+#HTTPS CONFIGURATION
+
+server:
+  port: 8443
+  ssl:
+    enabled: true
+    key-alias: luv2code
+    key-store: classpath:luv2code-keystore.p12
+    key-store-password: secret
+    key-store-type: PKCS12
+
+#STRIPE API KEY
+stripe:
+  key:
+    secret: <STRIPE_SECRET_KEY>

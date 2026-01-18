@@ -1,0 +1,4 @@
+td,
+th {
+  @apply text-center;
+}

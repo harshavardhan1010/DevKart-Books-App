@@ -1,0 +1,62 @@
+<div class="flex flex-col xl:flex-row justify-center items-center">
+  <div class="md:w-1/2">
+    <img src="{{ product.imageUrl }}" alt="" class="w-full xl:w-4/5" />
+  </div>
+  <div class="w-4/5 md:w-1/2 h-1/3 space-y-5">
+    <div class="text-3xl lg:text-4xl font-bold text-center xl:text-left">
+      {{ product.name }}
+    </div>
+    <div class="text-justify lg:max-w-md">{{ product.description }}</div>
+    <div class="text-3xl font-bold text-center xl:text-left lg:text-4xl">
+      {{ product.unitPrice }}
+    </div>
+    <div
+      class="flex flex-col xl:flex-row w-full border border-red-500 space-y-4 xl:space-y-0 xl:space-x-4"
+    >
+      <p-button
+        icon="pi pi-shopping-cart"
+        label="Add to Cart"
+        styleClass="w-full"
+        (click)="addToCart()"
+      ></p-button>
+      <p-button
+        icon="pi pi-home"
+        label="Back to Product List"
+        styleClass="w-full"
+        routerLink="/category/{{ categoryId }}"
+      ></p-button>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="flex flex-col lg:flex-row md:items-center h-screen md:h-auto">
+  <div class="w-1/2 h-2/3">
+    <img src="{{ product.imageUrl }}" alt="" class="w-full lg:w-4/5" />
+  </div>
+  <div class="w-1/2 h-1/3 space-y-5">
+    <div class="text-2xl font-bold">{{ product.name }}</div>
+    <div class="text-justify lg:max-w-md">{{ product.description }}</div>
+    <div class="text-3xl font-bold">{{ product.unitPrice }}</div>
+    <div class="flex flex-col w-full border border-red-500 space-y-4">
+      <p-button
+        icon="pi pi-iconName"
+        label="Add to Cart"
+        styleClass="w-full"
+      ></p-button>
+      <p-button
+        icon="pi pi-iconName"
+        label="Back to home"
+        styleClass="w-full"
+      ></p-button>
+    </div>
+  </div>
+</div> -->
+
+<!-- <ng-container *ngIf="product">
+  <img src="{{ product.imageUrl }}" alt="" />
+  <div>{{ product.description }}</div>
+  <div>{{ product.unitPrice }}</div>
+  <p-button routerLink="/category/{{ categoryId }}" class="mt-5"
+    >Back to Product List</p-button
+  >
+</ng-container> -->

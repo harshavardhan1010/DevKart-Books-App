@@ -1,0 +1,84 @@
+
+### VS Code ###
+.vscode/
+
+# Angular Files To Ignore
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Compiled output
+/01-frontend/dist
+/01-frontend/tmp
+/01-frontend/out-tsc
+/01-frontend/bazel-out
+
+# Node
+/01-frontend/node_modules
+/01-frontend/npm-debug.log
+/01-frontend/yarn-error.log
+
+# IDEs and editors
+/01-frontend/.idea/
+/01-frontend/.project
+/01-frontend/.classpath
+/01-frontend/.c9/
+/01-frontend/*.launch
+/01-frontend/.settings/
+/01-frontend/*.sublime-workspace
+
+# Visual Studio Code
+/01-frontend/.vscode/*
+/01-frontend/!.vscode/settings.json
+/01-frontend/!.vscode/tasks.json
+/01-frontend/!.vscode/launch.json
+/01-frontend/!.vscode/extensions.json
+/01-frontend/.history/*
+
+# Miscellaneous
+/01-frontend/.angular/cache
+/01-frontend/.sass-cache/
+/01-frontend/connect.lock
+/01-frontend/coverage
+/01-frontend/libpeerconnection.log
+/01-frontend/testem.log
+/01-frontend/typings
+
+# System files
+/01-frontend/.DS_Store
+/01-frontend/Thumbs.db
+
+# Spring-boot files to ignore
+
+02-backend/HELP.md
+02-backend/target/
+02-backend/!.mvn/wrapper/maven-wrapper.jar
+02-backend/!**/src/main/**/target/
+02-backend/!**/src/test/**/target/
+
+### STS ###
+02-backend/.apt_generated
+02-backend/.classpath
+02-backend/.factorypath
+02-backend/.project
+02-backend/.settings
+02-backend/.springBeans
+02-backend/.sts4-cache
+
+### IntelliJ IDEA ###
+02-backend/.idea
+02-backend/*.iws
+02-backend/*.iml
+02-backend/*.ipr
+
+### NetBeans ###
+02-backend/nbproject/private/
+02-backend/nbbuild/
+02-backend/dist/
+02-backend/nbdist/
+02-backend/.nb-gradle/
+02-backend/build/
+02-backend/!**/src/main/**/build/
+02-backend/!**/src/test/**/build/
+
+### VS Code ###
+02-backend/.vscode/
+
